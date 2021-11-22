@@ -1,4 +1,4 @@
-# Mataeasy
+# Metaeasy
 ## 題目
 
 ![image](https://user-images.githubusercontent.com/57281249/142795079-081b6121-de1a-42a8-b090-c859da245b43.png)
