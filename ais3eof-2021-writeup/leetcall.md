@@ -19,3 +19,6 @@ getattr('','format')(setattr(__builtins__,'a',range(1,10001)),setattr(__builtins
 ```
 
 ![image](https://user-images.githubusercontent.com/57281249/149656065-11129a7b-6f05-44c2-b292-965b80a5de0b.png)
+
+## flag
+FLAG{actually_you_can_also_solve_those_leetcode_challenges_in_this_way:D}
