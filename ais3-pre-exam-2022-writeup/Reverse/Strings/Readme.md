@@ -52,5 +52,7 @@ F5 反編譯然後開始跑 Debug
 
 接著就簡單了，按照 dest 一個一個接回來送 ./strings 也回 correct flag 這樣就解掉了
 
+![image](https://user-images.githubusercontent.com/57281249/168678617-90766d68-27c6-469b-8c6f-01fb14bba3dc.png)
+
 ## Flag
 `AIS3{_the_answer_is_guess_the_strings_using_good_luck_}`
