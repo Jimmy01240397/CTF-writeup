@@ -1,4 +1,4 @@
 # Web
 ## writeup
-- [Poking Bear](Poking Bear)
-- [Private Browsing](Private Browsing)
+- [Poking Bear](Poking%20Bear)
+- [Private Browsing](Private%20Browsing)
