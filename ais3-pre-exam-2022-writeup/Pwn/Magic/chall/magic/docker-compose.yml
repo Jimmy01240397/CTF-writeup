@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  magic:
+    build: ./
+    volumes:
+      - ./share:/home/magic:ro
+      - ./xinetd:/etc/xinetd.d/magic:ro
+    ports:
+      - "12348:12348"
+    expose:
+      - "12348"

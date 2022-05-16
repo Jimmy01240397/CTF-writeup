@@ -1,0 +1,13 @@
+service bof2win
+{
+    disable = no
+    type = UNLISTED
+    socket_type = stream
+    protocol = tcp
+    server = /home/bof2win/run.sh
+    user = bof2win
+    port = 12347
+    flags = REUSE
+    bind = 0.0.0.0
+    wait = no
+}

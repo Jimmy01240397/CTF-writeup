@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  seadog-shell:
+    build: ./
+    volumes:
+      - ./src/webshell:/webshell:ro
+      - ./xinetd:/etc/xinetd.d/seadog-shell:ro
+    environment:
+      FLAG: AIS3{not real flag}
+    ports:
+      - "12369:12369"

@@ -1,0 +1,27 @@
+version: "3.5"
+
+x-share-env:
+  &share-env
+  ADMIN_PASSWORD: <CENSORED>
+  FLAG_UUID: <CENSORED>
+
+services:
+  web:
+    depends_on:
+      - xss-bot
+    image: tiangolo/uwsgi-nginx-flask:python3.9
+    volumes:
+      - ./app/:/app:ro
+      - ./uploads:/data/uploads
+      - ./flag.png:/flag.png # real flag.png is on the challenge server
+    ports:
+      - 8001:80/tcp
+    environment:
+      <<: *share-env
+    restart: always
+
+  xss-bot:
+    build: ./bot
+    environment:
+      <<: *share-env
+    restart: always

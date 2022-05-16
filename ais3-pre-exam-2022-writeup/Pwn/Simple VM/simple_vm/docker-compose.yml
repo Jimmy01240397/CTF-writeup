@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  simple_vm:
+    build: ./
+    volumes:
+      - ./share:/home/simple_vm:ro
+      - ./xinetd:/etc/xinetd.d/simple_vm:ro
+    ports:
+      - "12349:12349"
+    expose:
+      - "12349"

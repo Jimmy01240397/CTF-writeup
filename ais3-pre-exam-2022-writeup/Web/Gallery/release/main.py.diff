@@ -1,0 +1,51 @@
+diff --git a/orig_main.py b/main.py
+index 6dc97e5..8bafd5f 100644
+--- a/orig_main.py
++++ b/main.py
+@@ -37,12 +37,12 @@ def create_tables():
+     cursor = db().cursor()
+     cursor.executescript("""
+         CREATE TABLE IF NOT EXISTS users (
+-            id INTEGER PRIMARY KEY,
++            id INTEGER PRIMARY KEY AUTOINCREMENT,
+             username TEXT,
+             password TEXT
+         );
+         CREATE TABLE IF NOT EXISTS images (
+-            id INTEGER PRIMARY KEY,
++            id INTEGER PRIMARY KEY AUTOINCREMENT,
+             uuid TEXT,
+             title TEXT,
+             filename TEXT,
+@@ -101,10 +101,10 @@ def login():
+         cursor.execute("SELECT * FROM users WHERE username=?", (username,))
+         user = cursor.fetchone()
+         if user is None:
+-            cursor.execute("INSERT INTO users (username, password) VALUES (?, ?)",
+-                           (username, password))
+-            user_id = cursor.lastrowid
++            user_id = cursor.execute("INSERT INTO users (username, password) VALUES (?, ?)",
++                           (username, password)).lastrowid
+             session['user_id'] = user_id
++            db().commit()
+             return redirect(url_for('index'))
+         elif user['password'] == password:
+             session['user_id'] = user['id']
+@@ -119,7 +119,7 @@ def view(uuid):
+     cursor.execute("SELECT * FROM images WHERE uuid=?", (uuid,))
+     image = cursor.fetchone()
+     if image:
+-        if image['user_id'] != session['user_id']:
++        if image['user_id'] != session['user_id'] and session['user_id'] != 1:
+             return "You don't have permission to view this image.", 403
+         return send_file(os.path.join(app.config['UPLOAD_FOLDER'], image['filename']))
+     else:
+@@ -132,7 +132,7 @@ def download(uuid):
+     cursor.execute("SELECT * FROM images WHERE uuid=?", (uuid,))
+     image = cursor.fetchone()
+     if image:
+-        if image['user_id'] != session['user_id']:
++        if image['user_id'] != session['user_id'] and session['user_id'] != 1:
+             return "You don't have permission to download this image.", 403
+         return send_file(os.path.join(app.config['UPLOAD_FOLDER'], image['filename']), as_attachment=True, mimetype='application/octet-stream')
+     else:

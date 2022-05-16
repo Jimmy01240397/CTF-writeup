@@ -1,0 +1,13 @@
+service simple_vm
+{
+    disable = no
+    type = UNLISTED
+    socket_type = stream
+    protocol = tcp
+    server = /home/simple_vm/run.sh
+    user = simple_vm
+    port = 12349
+    flags = REUSE
+    bind = 0.0.0.0
+    wait = no
+}

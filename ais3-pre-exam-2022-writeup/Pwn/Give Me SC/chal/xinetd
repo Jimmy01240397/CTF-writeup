@@ -1,0 +1,15 @@
+service give_me_sc
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/give_me_sc/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = give_me_sc
+        port = 5566
+        flags = REUSE
+        per_source = 5
+        rlimit_cpu = 3
+        nice = 18
+}

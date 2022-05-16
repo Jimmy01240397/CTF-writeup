@@ -1,0 +1,16 @@
+# ais3-pre-exam-2022-writeup
+## writeup
+- [Welcome](Welcome)
+	- [Welcome](Welcome/Welcome)
+- [Misc](Misc)
+	- [Excel](Misc/Excel)
+	- [Gift in the dream](Misc/Gift in the dream)
+	- [Knock](Misc/Knock)
+	- [JeetQode](Misc/JeetQode)
+	- [Seadog's Webshell](Misc/Seadog's Webshell)
+- [Reverse](Reverse)
+	- [Calculator](Reverse/Calculator)
+	- [Strings](Reverse/Strings)
+- [Web](Web)
+	- [Poking Bear](Web/Poking Bear)
+	- [Private Browsing](Web/Private Browsing)

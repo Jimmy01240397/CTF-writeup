@@ -1,0 +1,12 @@
+service seadog-shell
+{
+    disable = no
+    type = UNLISTED
+    wait = no
+    server = /webshell
+    socket_type = stream
+    protocol = tcp
+    user = ctf
+    port = 12369
+    flags = REUSE
+}

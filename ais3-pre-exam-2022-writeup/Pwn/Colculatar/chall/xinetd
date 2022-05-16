@@ -1,0 +1,13 @@
+service colculatar
+{
+    disable = no
+    type = UNLISTED
+    socket_type = stream
+    protocol = tcp
+    server = /home/colculatar/run.sh
+    user = colculatar
+    port = 12345
+    flags = REUSE
+    bind = 0.0.0.0
+    wait = no
+}

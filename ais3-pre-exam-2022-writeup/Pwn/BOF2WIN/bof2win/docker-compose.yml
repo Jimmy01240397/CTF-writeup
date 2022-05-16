@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  bof2win:
+    build: ./
+    volumes:
+      - ./share:/home/bof2win:ro
+      - ./xinetd:/etc/xinetd.d/bof2win:ro
+    ports:
+      - "12347:12347"
+    expose:
+      - "12347"

@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  give_me_sc: 
+    container_name: give_me_sc
+    build: ./
+    volumes:
+      - ./share:/home/give_me_sc:ro
+      - ./xinetd:/etc/xinetd.d/give_me_sc:ro
+    ports:
+      - "15566:5566"

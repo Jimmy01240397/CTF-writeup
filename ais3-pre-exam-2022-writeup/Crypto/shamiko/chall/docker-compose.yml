@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  chall:
+    build:
+      context: .
+    ports:
+      - 6002:6002
+    environment:
+      - FLAG=AIS3{redacted}
+    restart: always

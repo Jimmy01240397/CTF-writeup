@@ -1,0 +1,13 @@
+service magic
+{
+    disable = no
+    type = UNLISTED
+    socket_type = stream
+    protocol = tcp
+    server = /home/magic/run.sh
+    user = magic
+    port = 12348
+    flags = REUSE
+    bind = 0.0.0.0
+    wait = no
+}
