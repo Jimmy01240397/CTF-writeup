@@ -186,3 +186,6 @@ int main()
     printf("%s\n", data);
 }
 ```
+
+## Flag
+`hitcon{r3ally_re4lly_rea11y_normal_checker}`
