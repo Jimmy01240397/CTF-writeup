@@ -22,4 +22,4 @@
 		- [Poking Bear](ais3-pre-exam-2022-writeup/Web/Poking%20Bear)
 		- [Private Browsing](ais3-pre-exam-2022-writeup/Web/Private%20Browsing)
 - [hitconctf-2022-writeup](hitconctf-2022-writeup)
-	- [metaeasy](hitconctf-2022-writeup/checker)
+	- [checker](hitconctf-2022-writeup/checker)
