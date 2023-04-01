@@ -1,4 +1,6 @@
 # ais3-pre-exam-2022-writeup
+## Score Board
+![](https://img.stoneapp.tech/t510599/ais3-2022/pre-exam/scoreboard.jpeg)
 ## writeup
 - [Welcome](Welcome)
 	- [Welcome](Welcome/Welcome)
