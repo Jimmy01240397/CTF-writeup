@@ -1,6 +1,5 @@
 # ais3eof-2021-writeup
 
 ## writeup
-- [metaeasy](metaeasy.md)
-- [darkknight](darkknight.md)
-- [proxy](proxy.md)
+- [SSRF_Challenge_or_Not](SSRF_Challenge_or_Not)
+- [leetcall](leetcall)
