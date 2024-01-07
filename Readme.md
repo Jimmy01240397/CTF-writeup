@@ -34,5 +34,6 @@
 	- [Reverse](ais3-eof-2024-writeup/Reverse)
 		- [Flag Generator](ais3-eof-2024-writeup/Reverse/Flag%20Generator)
 		- [Stateful](ais3-eof-2024-writeup/Reverse/Stateful)
+ 		- [PixelClicker（賽候補解）](ais3-eof-2024-writeup/Reverse/PixelClicker)
 	- [Crypto](ais3-eof-2024-writeup/Crypto)
 		- [Baby RSA](ais3-eof-2024-writeup/Crypto/Baby%20RSA)
