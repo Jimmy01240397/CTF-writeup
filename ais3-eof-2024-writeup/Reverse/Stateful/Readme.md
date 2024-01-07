@@ -2,20 +2,35 @@
 ![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/6e785309-6170-49fc-9714-773494905188)
 
 ## 解題
+他是一個 linux ELF 執行檔
+
+![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/3cbe0887-c8f5-4deb-81cd-a9db1934a7d2)
+
+執行後直接噴 `WRONG!!!`
+
+![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/45672138-30f9-4aa2-9fdb-1bfc8458ad8d)
+
+似乎執行時要輸入一個長度為 43 的字串參數，應該是 flag，這個字串會經過 `state_machine` function 運算後跟 `k_target` 裡的資料一個一個做比對。
+
 ![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/ba46bbd0-0178-4bb9-9ada-cd8c3a15d4ea)
 
 ![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/fe1e25b7-1250-4702-8e97-b66f05fa000d)
 
 ![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/fe6d21e3-06f3-4066-a609-ff1ab19b485e)
 
+把 `k_target` 複製出來
+
 ![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/0f29e032-b311-41a9-844f-fea2b7f80b72)
 
 ![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/99d07b7c-a60d-4e3e-943a-8d80877ec0de)
+
+`state_machine` 裡面會有一坨判斷並且會按照某個特定順序執行裡面的這些 function，設定中斷點做 debug 逐步執行，並且記錄這些 function 的執行過程
 
 ![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/3e1242d3-c80f-4e09-85b1-760079fdc09e)
 
 ![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/85b6eea0-8d58-460a-804a-502a843ce8f1)
 
+得到：
 
 ```
 state_3618225054
@@ -70,6 +85,8 @@ state_3648003850
 state_1978986903
 ```
 ![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/4d3b76db-9a4d-478d-9864-adf0d9bd9449)
+
+這些 function 的內部都是一個加減法運算，所以我們按照這個順序反過來把 `k_target` 推回去就會拿到 flag 了
 
 ![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/404e0876-0838-4e42-aa21-6c555933b623)
 
