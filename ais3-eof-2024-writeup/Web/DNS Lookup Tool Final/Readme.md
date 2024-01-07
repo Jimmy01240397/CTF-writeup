@@ -5,6 +5,19 @@
 ![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/41cfd043-3fe8-4141-81d3-f057901a04bc)
 
 ## 解題
+正常
+
+![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/a81ed269-8b81-4b17-9c49-06cd95765705)
+
+不存在 domain
+
+![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/8c1547f0-025c-4875-aafd-3315a68e9d46)
+
+使用違規字元
+
+![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/2dbd2b38-8128-4883-95cd-aa7f50ee911f)
+
+
 讀 code 找到 blacklist
 
 ![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/68686376-29a6-4bbc-bca0-3c63da797b1f)
