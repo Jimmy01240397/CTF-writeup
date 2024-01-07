@@ -1,9 +1,17 @@
 # Baby RSA
 ![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/7045274e-382a-4447-bd6b-0890103f4304)
 
+## 解題
 
-## ref
-[Coppersmith Basic Broadcast Attack](https://ctf-wiki.org/crypto/asymmetric/rsa/rsa_coppersmith_attack/)
+進去會給你 N 跟 e 還有用這個 N 跟 e RSA 加密後的 flag 密文
+
+![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/ca214c9e-1f44-4961-aa37-7eb8501ecad2)
+
+每次進去的 N 都不一樣，但是 e 都會是 3
+
+![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/d3faef7b-6c5d-407a-aa03-c9ff9642b70d)
+
+可以用 [Coppersmith Basic Broadcast Attack](https://ctf-wiki.org/crypto/asymmetric/rsa/rsa_coppersmith_attack/)，先收集一定數量的 N 跟 flag 密文，然後用 Broadcast Attack 破解密文就會拿到 flag
 
 ## exploit
 ```python
