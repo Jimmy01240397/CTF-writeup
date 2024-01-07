@@ -1,6 +1,8 @@
 # PixelClicker
 ![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/0728f691-eff5-4ab0-bf26-40d4f319bf19)
 
+(本題是賽後解的)
+
 ## 解題
 一個充滿了點點的正方形的 windows from，這接點點（pixel）可以點擊
 
