@@ -10,6 +10,7 @@
 ![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/68686376-29a6-4bbc-bca0-3c63da797b1f)
 
 發現 `$()` 沒檔，測一下
+
 ![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/525b06b2-d309-47a2-976d-70058bd30fb4)
 
 過了
