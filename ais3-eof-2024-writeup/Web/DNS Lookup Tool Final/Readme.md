@@ -2,7 +2,7 @@
 ![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/f415e3ed-1266-43e2-88fb-a1e6681cee27)
 
 ## Webpage
-![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/525b06b2-d309-47a2-976d-70058bd30fb4)
+![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/41cfd043-3fe8-4141-81d3-f057901a04bc)
 
 ## 解題
 讀 code 找到 blacklist
