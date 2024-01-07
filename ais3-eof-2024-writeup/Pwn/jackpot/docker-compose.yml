@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  jackpot:
+    build: ./
+    volumes:
+      - ./share:/home/jackpot:ro
+      - ./xinetd:/etc/xinetd.d/jackpot:ro
+    ports:
+      - "10101:10101"

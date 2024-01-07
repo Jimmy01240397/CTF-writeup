@@ -1,0 +1,30 @@
+version: '3.5'
+
+services:
+  database:
+    image: mariadb:latest
+    environment:
+      - MARIADB_RANDOM_ROOT_PASSWORD=1
+      - MARIADB_USER=user
+      - MARIADB_PASSWORD=redacted
+      - MARIADB_DATABASE=laravel
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    restart: always
+
+  web:
+    build:
+      context: ./
+      args:
+        FLAG: ${FLAG}
+
+    ports:
+      - "${PORT}:80"
+    depends_on:
+      - database
+
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: ${SUBNET}

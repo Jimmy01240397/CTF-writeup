@@ -1,0 +1,14 @@
+service perm_note
+{
+	disable = no
+	type = UNLISTED
+	wait = no
+	server = /home/perm_note/run.sh
+	socket_type = stream
+	protocol = tcp
+	user = perm_note
+	groups = yes
+	bind = 0.0.0.0
+	port = 10101
+	flags = REUSE
+}

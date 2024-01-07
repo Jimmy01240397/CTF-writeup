@@ -1,0 +1,26 @@
+version: '3'
+services:
+  web:
+    build:
+      context: ./web
+    environment:
+      - TITLE=HTML Debugger
+      - PORT=80
+    ports:
+      - "20000:80"
+    restart: always
+  bot:
+    build:
+      context: ./bot
+    environment:
+      - TITLE=Admin Bot
+      - PORT=80
+      - URL_CHECK_REGEX=^http://web/\?html=.*$$
+      - DOMAIN=${DOMAIN}
+      - FLAG=${FLAG}
+    init: true
+    security_opt:
+      - seccomp=bot/chrome.json
+    ports:
+      - "20001:80"
+    restart: always

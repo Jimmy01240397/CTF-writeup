@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+  web:
+    build: ./
+    volumes:
+      - ./flag:/flag
+    ports:
+      - "8000:80"
+
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 172.19.0.1/16

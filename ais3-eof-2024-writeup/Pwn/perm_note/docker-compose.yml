@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  perm_note:
+    build: .
+    volumes:
+      - ./share:/home/perm_note:ro
+      - ./xinetd:/etc/xinetd.d/perm_note:ro
+    ports:
+      - "10101:10101"
+    expose:
+      - "10101"
+    restart: always

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>複製文產生器</title>
+    <link  rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+    <style>
+        .template {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>複製文模板產生器</h1>
+    {% for tmpl in templates %}
+        <div class="template">
+            <h2>{{ tmpl.title }}</h2>
+            <a href="/use?id={{ tmpl.id }}">Use this</a>
+        </div>
+    {% endfor %}
+
+    <h3>Your posts</h3>
+    <ul>
+        {% for post in session.posts %}
+            <li><a href="/view/{{ post }}">{{ post }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

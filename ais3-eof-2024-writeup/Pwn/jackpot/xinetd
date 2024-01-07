@@ -1,0 +1,13 @@
+service jackpot
+{
+    disable = no
+    type = UNLISTED
+    socket_type = stream
+    protocol = tcp
+    server = /home/jackpot/run.sh
+    user = jackpot
+    port = 10101
+    flags = REUSE
+    bind = 0.0.0.0
+    wait = no
+}

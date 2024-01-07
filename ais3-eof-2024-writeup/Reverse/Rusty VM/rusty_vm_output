@@ -1,0 +1,561 @@
+[+] Enter encrypted flag: [VM] 0: the current instruction: 1
+[VM] 2: the current instruction: 17
+[VM] 3: the current instruction: 1
+[VM] 5: the current instruction: 3
+[VM] 6: the current instruction: 1
+[VM] 8: the current instruction: 2
+[OUTPUT] 128 
+[VM] 9: the current instruction: 2
+[OUTPUT] 178 
+[VM] 10: the current instruction: 1
+[VM] 12: the current instruction: 12
+[VM] 13: the current instruction: 2
+[OUTPUT] 224 
+[VM] 14: the current instruction: 2
+[OUTPUT] 176 
+[VM] 15: the current instruction: 1
+[VM] 17: the current instruction: 10
+[VM] 18: the current instruction: 1
+[VM] 20: the current instruction: 15
+[VM] 21: the current instruction: 1
+[VM] 23: the current instruction: 13
+[VM] 24: the current instruction: 1
+[VM] 26: the current instruction: 15
+[VM] 27: the current instruction: 1
+[VM] 29: the current instruction: 10
+[VM] 30: the current instruction: 1
+[VM] 32: the current instruction: 10
+[VM] 33: the current instruction: 1
+[VM] 35: the current instruction: 3
+[VM] 36: the current instruction: 2
+[OUTPUT] 219 
+[VM] 37: the current instruction: 1
+[VM] 39: the current instruction: 10
+[VM] 40: the current instruction: 1
+[VM] 42: the current instruction: 16
+[VM] 43: the current instruction: 2
+[OUTPUT] 6 
+[VM] 44: the current instruction: 1
+[VM] 46: the current instruction: 1
+[VM] 48: the current instruction: 16
+[VM] 49: the current instruction: 2
+[OUTPUT] 6 
+[VM] 50: the current instruction: 1
+[VM] 52: the current instruction: 10
+[VM] 53: the current instruction: 1
+[VM] 55: the current instruction: 10
+[VM] 56: the current instruction: 2
+[OUTPUT] 1 
+[VM] 57: the current instruction: 1
+[VM] 59: the current instruction: 17
+[VM] 60: the current instruction: 2
+[OUTPUT] 226 
+[VM] 61: the current instruction: 2
+[OUTPUT] 2 
+[VM] 62: the current instruction: 1
+[VM] 64: the current instruction: 12
+[VM] 65: the current instruction: 2
+[OUTPUT] 139 
+[VM] 66: the current instruction: 1
+[VM] 68: the current instruction: 13
+[VM] 69: the current instruction: 1
+[VM] 71: the current instruction: 15
+[VM] 72: the current instruction: 2
+[OUTPUT] 16 
+[VM] 73: the current instruction: 2
+[OUTPUT] 3 
+[VM] 74: the current instruction: 2
+[OUTPUT] 169 
+[VM] 75: the current instruction: 2
+[OUTPUT] 133 
+[VM] 76: the current instruction: 2
+[OUTPUT] 140 
+[VM] 77: the current instruction: 2
+[OUTPUT] 253 
+[VM] 78: the current instruction: 1
+[VM] 80: the current instruction: 15
+[VM] 81: the current instruction: 1
+[VM] 83: the current instruction: 14
+[VM] 84: the current instruction: 2
+[OUTPUT] 4 
+[VM] 85: the current instruction: 1
+[VM] 87: the current instruction: 17
+[VM] 88: the current instruction: 1
+[VM] 90: the current instruction: 1
+[VM] 92: the current instruction: 13
+[VM] 93: the current instruction: 2
+[OUTPUT] 128 
+[VM] 94: the current instruction: 1
+[VM] 96: the current instruction: 1
+[VM] 98: the current instruction: 17
+[VM] 99: the current instruction: 1
+[VM] 101: the current instruction: 13
+[VM] 102: the current instruction: 2
+[OUTPUT] 91 
+[VM] 103: the current instruction: 2
+[OUTPUT] 3 
+[VM] 104: the current instruction: 1
+[VM] 106: the current instruction: 10
+[VM] 107: the current instruction: 1
+[VM] 109: the current instruction: 16
+[VM] 110: the current instruction: 1
+[VM] 112: the current instruction: 11
+[VM] 113: the current instruction: 2
+[OUTPUT] 250 
+[VM] 114: the current instruction: 2
+[OUTPUT] 4 
+[VM] 115: the current instruction: 1
+[VM] 117: the current instruction: 16
+[VM] 118: the current instruction: 2
+[OUTPUT] 222 
+[VM] 119: the current instruction: 2
+[OUTPUT] 2 
+[VM] 120: the current instruction: 2
+[OUTPUT] 7 
+[VM] 121: the current instruction: 1
+[VM] 123: the current instruction: 11
+[VM] 124: the current instruction: 1
+[VM] 126: the current instruction: 1
+[VM] 128: the current instruction: 4
+[VM] 129: the current instruction: 2
+[OUTPUT] 243 
+[VM] 130: the current instruction: 2
+[OUTPUT] 249 
+[VM] 131: the current instruction: 2
+[OUTPUT] 0 
+[VM] 132: the current instruction: 1
+[VM] 134: the current instruction: 15
+[VM] 135: the current instruction: 1
+[VM] 137: the current instruction: 2
+[OUTPUT] 212 
+[VM] 138: the current instruction: 1
+[VM] 140: the current instruction: 11
+[VM] 141: the current instruction: 1
+[VM] 143: the current instruction: 11
+[VM] 144: the current instruction: 2
+[OUTPUT] 255 
+[VM] 145: the current instruction: 1
+[VM] 147: the current instruction: 4
+[VM] 148: the current instruction: 2
+[OUTPUT] 8 
+[VM] 149: the current instruction: 2
+[OUTPUT] 4 
+[VM] 150: the current instruction: 2
+[OUTPUT] 6 
+[VM] 151: the current instruction: 2
+[OUTPUT] 14 
+[VM] 152: the current instruction: 1
+[VM] 154: the current instruction: 14
+[VM] 155: the current instruction: 2
+[OUTPUT] 4 
+[VM] 156: the current instruction: 2
+[OUTPUT] 4 
+[VM] 157: the current instruction: 1
+[VM] 159: the current instruction: 17
+[VM] 160: the current instruction: 2
+[OUTPUT] 1 
+[VM] 161: the current instruction: 2
+[OUTPUT] 1 
+[VM] 162: the current instruction: 1
+[VM] 164: the current instruction: 15
+[VM] 165: the current instruction: 1
+[VM] 167: the current instruction: 11
+[VM] 168: the current instruction: 2
+[OUTPUT] 251 
+[VM] 169: the current instruction: 1
+[VM] 171: the current instruction: 13
+[VM] 172: the current instruction: 2
+[OUTPUT] 128 
+[VM] 173: the current instruction: 1
+[VM] 175: the current instruction: 13
+[VM] 176: the current instruction: 2
+[OUTPUT] 224 
+[VM] 177: the current instruction: 1
+[VM] 179: the current instruction: 1
+[VM] 181: the current instruction: 11
+[VM] 182: the current instruction: 2
+[OUTPUT] 248 
+[VM] 183: the current instruction: 1
+[VM] 185: the current instruction: 15
+[VM] 186: the current instruction: 1
+[VM] 188: the current instruction: 13
+[VM] 189: the current instruction: 2
+[OUTPUT] 33 
+[VM] 190: the current instruction: 2
+[OUTPUT] 1 
+[VM] 191: the current instruction: 2
+[OUTPUT] 59 
+[VM] 192: the current instruction: 1
+[VM] 194: the current instruction: 21
+[VM] 198: the current instruction: 1
+[VM] 200: the current instruction: 20
+[VM] 202: the current instruction: 17
+[VM] 203: the current instruction: 14
+[VM] 204: the current instruction: 17
+[VM] 205: the current instruction: 1
+[VM] 207: the current instruction: 11
+[VM] 208: the current instruction: 2
+[OUTPUT] 253 
+[VM] 209: the current instruction: 1
+[VM] 211: the current instruction: 13
+[VM] 212: the current instruction: 2
+[OUTPUT] 72 
+[VM] 213: the current instruction: 2
+[OUTPUT] 18 
+[VM] 214: the current instruction: 2
+[OUTPUT] 18 
+[VM] 215: the current instruction: 2
+[OUTPUT] 87 
+[VM] 216: the current instruction: 2
+[OUTPUT] 18 
+[VM] 217: the current instruction: 1
+[VM] 219: the current instruction: 14
+[VM] 220: the current instruction: 1
+[VM] 222: the current instruction: 16
+[VM] 223: the current instruction: 1
+[VM] 225: the current instruction: 13
+[VM] 226: the current instruction: 2
+[OUTPUT] 14 
+[VM] 227: the current instruction: 2
+[OUTPUT] 0 
+[VM] 228: the current instruction: 2
+[OUTPUT] 7 
+[VM] 229: the current instruction: 2
+[OUTPUT] 199 
+[VM] 230: the current instruction: 1
+[VM] 232: the current instruction: 11
+[VM] 233: the current instruction: 1
+[VM] 235: the current instruction: 1
+[VM] 237: the current instruction: 15
+[VM] 238: the current instruction: 1
+[VM] 240: the current instruction: 10
+[VM] 241: the current instruction: 1
+[VM] 243: the current instruction: 11
+[VM] 244: the current instruction: 2
+[OUTPUT] 251 
+[VM] 245: the current instruction: 2
+[OUTPUT] 245 
+[VM] 246: the current instruction: 2
+[OUTPUT] 0 
+[VM] 247: the current instruction: 2
+[OUTPUT] 255 
+[VM] 248: the current instruction: 2
+[OUTPUT] 234 
+[VM] 249: the current instruction: 2
+[OUTPUT] 64 
+[VM] 250: the current instruction: 2
+[OUTPUT] 50 
+[VM] 251: the current instruction: 1
+[VM] 253: the current instruction: 14
+[VM] 254: the current instruction: 2
+[OUTPUT] 3 
+[VM] 255: the current instruction: 1
+[VM] 257: the current instruction: 13
+[VM] 258: the current instruction: 2
+[OUTPUT] 192 
+[VM] 259: the current instruction: 2
+[OUTPUT] 144 
+[VM] 260: the current instruction: 1
+[VM] 262: the current instruction: 16
+[VM] 263: the current instruction: 1
+[VM] 265: the current instruction: 16
+[VM] 266: the current instruction: 1
+[VM] 268: the current instruction: 11
+[VM] 269: the current instruction: 2
+[OUTPUT] 251 
+[VM] 270: the current instruction: 1
+[VM] 272: the current instruction: 16
+[VM] 273: the current instruction: 1
+[VM] 275: the current instruction: 13
+[VM] 276: the current instruction: 2
+[OUTPUT] 131 
+[VM] 277: the current instruction: 1
+[VM] 279: the current instruction: 17
+[VM] 280: the current instruction: 2
+[OUTPUT] 0 
+[VM] 281: the current instruction: 2
+[OUTPUT] 4 
+[VM] 282: the current instruction: 1
+[VM] 284: the current instruction: 11
+[VM] 285: the current instruction: 2
+[OUTPUT] 254 
+[VM] 286: the current instruction: 1
+[VM] 288: the current instruction: 21
+[VM] 296: the current instruction: 1
+[VM] 298: the current instruction: 10
+[VM] 299: the current instruction: 2
+[OUTPUT] 3 
+[VM] 300: the current instruction: 1
+[VM] 302: the current instruction: 11
+[VM] 303: the current instruction: 1
+[VM] 305: the current instruction: 17
+[VM] 306: the current instruction: 1
+[VM] 308: the current instruction: 10
+[VM] 309: the current instruction: 2
+[OUTPUT] 249 
+[VM] 310: the current instruction: 1
+[VM] 312: the current instruction: 21
+[VM] 314: the current instruction: 2
+[OUTPUT] 6 
+[VM] 315: the current instruction: 1
+[VM] 317: the current instruction: 13
+[VM] 318: the current instruction: 2
+[OUTPUT] 247 
+[VM] 319: the current instruction: 1
+[VM] 321: the current instruction: 20
+[VM] 323: the current instruction: 2
+[OUTPUT] 3 
+[VM] 324: the current instruction: 15
+[VM] 325: the current instruction: 1
+[VM] 327: the current instruction: 16
+[VM] 328: the current instruction: 2
+[OUTPUT] 43 
+[VM] 329: the current instruction: 2
+[OUTPUT] 3 
+[VM] 330: the current instruction: 2
+[OUTPUT] 32 
+[VM] 331: the current instruction: 1
+[VM] 333: the current instruction: 15
+[VM] 334: the current instruction: 1
+[VM] 336: the current instruction: 11
+[VM] 337: the current instruction: 2
+[OUTPUT] 250 
+[VM] 338: the current instruction: 2
+[OUTPUT] 182 
+[VM] 339: the current instruction: 2
+[OUTPUT] 5 
+[VM] 340: the current instruction: 2
+[OUTPUT] 177 
+[VM] 341: the current instruction: 1
+[VM] 343: the current instruction: 17
+[VM] 344: the current instruction: 1
+[VM] 346: the current instruction: 14
+[VM] 347: the current instruction: 2
+[OUTPUT] 5 
+[VM] 348: the current instruction: 1
+[VM] 350: the current instruction: 12
+[VM] 351: the current instruction: 2
+[OUTPUT] 80 
+[VM] 352: the current instruction: 1
+[VM] 354: the current instruction: 14
+[VM] 355: the current instruction: 1
+[VM] 357: the current instruction: 13
+[VM] 358: the current instruction: 1
+[VM] 360: the current instruction: 16
+[VM] 361: the current instruction: 2
+[OUTPUT] 0 
+[VM] 362: the current instruction: 2
+[OUTPUT] 5 
+[VM] 363: the current instruction: 2
+[OUTPUT] 0 
+[VM] 364: the current instruction: 2
+[OUTPUT] 164 
+[VM] 365: the current instruction: 1
+[VM] 367: the current instruction: 14
+[VM] 368: the current instruction: 1
+[VM] 370: the current instruction: 13
+[VM] 371: the current instruction: 1
+[VM] 373: the current instruction: 12
+[VM] 374: the current instruction: 1
+[VM] 376: the current instruction: 11
+[VM] 377: the current instruction: 2
+[OUTPUT] 253 
+[VM] 378: the current instruction: 1
+[VM] 380: the current instruction: 10
+[VM] 381: the current instruction: 2
+[OUTPUT] 5 
+[VM] 382: the current instruction: 1
+[VM] 384: the current instruction: 12
+[VM] 385: the current instruction: 1
+[VM] 387: the current instruction: 1
+[VM] 389: the current instruction: 15
+[VM] 390: the current instruction: 2
+[OUTPUT] 188 
+[VM] 391: the current instruction: 2
+[OUTPUT] 1 
+[VM] 392: the current instruction: 1
+[VM] 394: the current instruction: 1
+[VM] 396: the current instruction: 12
+[VM] 397: the current instruction: 2
+[OUTPUT] 175 
+[VM] 398: the current instruction: 2
+[OUTPUT] 8 
+[VM] 399: the current instruction: 2
+[OUTPUT] 2 
+[VM] 400: the current instruction: 2
+[OUTPUT] 164 
+[VM] 401: the current instruction: 1
+[VM] 403: the current instruction: 10
+[VM] 404: the current instruction: 1
+[VM] 406: the current instruction: 17
+[VM] 407: the current instruction: 2
+[OUTPUT] 84 
+[VM] 408: the current instruction: 2
+[OUTPUT] 4 
+[VM] 409: the current instruction: 1
+[VM] 411: the current instruction: 15
+[VM] 412: the current instruction: 1
+[VM] 414: the current instruction: 17
+[VM] 415: the current instruction: 1
+[VM] 417: the current instruction: 2
+[OUTPUT] 122 
+[VM] 418: the current instruction: 1
+[VM] 420: the current instruction: 11
+[VM] 421: the current instruction: 1
+[VM] 423: the current instruction: 16
+[VM] 424: the current instruction: 1
+[VM] 426: the current instruction: 15
+[VM] 427: the current instruction: 2
+[OUTPUT] 84 
+[VM] 428: the current instruction: 2
+[OUTPUT] 7 
+[VM] 429: the current instruction: 2
+[OUTPUT] 2 
+[VM] 430: the current instruction: 2
+[OUTPUT] 251 
+[VM] 431: the current instruction: 1
+[VM] 433: the current instruction: 2
+[OUTPUT] 156 
+[VM] 434: the current instruction: 2
+[OUTPUT] 5 
+[VM] 435: the current instruction: 1
+[VM] 437: the current instruction: 15
+[VM] 438: the current instruction: 2
+[OUTPUT] 84 
+[VM] 439: the current instruction: 2
+[OUTPUT] 3 
+[VM] 440: the current instruction: 2
+[OUTPUT] 4 
+[VM] 441: the current instruction: 1
+[VM] 443: the current instruction: 12
+[VM] 444: the current instruction: 2
+[OUTPUT] 68 
+[VM] 445: the current instruction: 1
+[VM] 447: the current instruction: 14
+[VM] 448: the current instruction: 2
+[OUTPUT] 3 
+[VM] 449: the current instruction: 2
+[OUTPUT] 3 
+[VM] 450: the current instruction: 1
+[VM] 452: the current instruction: 10
+[VM] 453: the current instruction: 1
+[VM] 455: the current instruction: 17
+[VM] 456: the current instruction: 2
+[OUTPUT] 67 
+[VM] 457: the current instruction: 1
+[VM] 459: the current instruction: 1
+[VM] 461: the current instruction: 13
+[VM] 462: the current instruction: 2
+[OUTPUT] 65 
+[VM] 463: the current instruction: 2
+[OUTPUT] 3 
+[VM] 464: the current instruction: 1
+[VM] 466: the current instruction: 13
+[VM] 467: the current instruction: 2
+[OUTPUT] 134 
+[VM] 468: the current instruction: 1
+[VM] 470: the current instruction: 16
+[VM] 471: the current instruction: 1
+[VM] 473: the current instruction: 15
+[VM] 474: the current instruction: 2
+[OUTPUT] 96 
+[VM] 475: the current instruction: 1
+[VM] 477: the current instruction: 17
+[VM] 478: the current instruction: 1
+[VM] 480: the current instruction: 16
+[VM] 481: the current instruction: 2
+[OUTPUT] 2 
+[VM] 482: the current instruction: 2
+[OUTPUT] 6 
+[VM] 483: the current instruction: 2
+[OUTPUT] 0 
+[VM] 484: the current instruction: 2
+[OUTPUT] 0 
+[VM] 485: the current instruction: 1
+[VM] 487: the current instruction: 10
+[VM] 488: the current instruction: 2
+[OUTPUT] 7 
+[VM] 489: the current instruction: 1
+[VM] 491: the current instruction: 21
+[VM] 496: the current instruction: 1
+[VM] 498: the current instruction: 15
+[VM] 499: the current instruction: 2
+[OUTPUT] 3 
+[VM] 500: the current instruction: 2
+[OUTPUT] 6 
+[VM] 501: the current instruction: 1
+[VM] 503: the current instruction: 2
+[OUTPUT] 126 
+[VM] 504: the current instruction: 2
+[OUTPUT] 233 
+[VM] 505: the current instruction: 1
+[VM] 507: the current instruction: 16
+[VM] 508: the current instruction: 1
+[VM] 510: the current instruction: 11
+[VM] 511: the current instruction: 2
+[OUTPUT] 253 
+[VM] 512: the current instruction: 1
+[VM] 514: the current instruction: 16
+[VM] 515: the current instruction: 1
+[VM] 517: the current instruction: 16
+[VM] 518: the current instruction: 2
+[OUTPUT] 0 
+[VM] 519: the current instruction: 1
+[VM] 521: the current instruction: 13
+[VM] 522: the current instruction: 2
+[OUTPUT] 1 
+[VM] 523: the current instruction: 2
+[OUTPUT] 4 
+[VM] 524: the current instruction: 1
+[VM] 526: the current instruction: 11
+[VM] 527: the current instruction: 1
+[VM] 529: the current instruction: 16
+[VM] 530: the current instruction: 1
+[VM] 532: the current instruction: 2
+[OUTPUT] 252 
+[VM] 533: the current instruction: 2
+[OUTPUT] 87 
+[VM] 534: the current instruction: 2
+[OUTPUT] 5 
+[VM] 535: the current instruction: 2
+[OUTPUT] 252 
+[VM] 536: the current instruction: 1
+[VM] 538: the current instruction: 14
+[VM] 539: the current instruction: 2
+[OUTPUT] 4 
+[VM] 540: the current instruction: 2
+[OUTPUT] 4 
+[VM] 541: the current instruction: 2
+[OUTPUT] 141 
+[VM] 542: the current instruction: 1
+[VM] 544: the current instruction: 11
+[VM] 545: the current instruction: 1
+[VM] 547: the current instruction: 13
+[VM] 548: the current instruction: 2
+[OUTPUT] 143 
+[VM] 549: the current instruction: 1
+[VM] 551: the current instruction: 11
+[VM] 552: the current instruction: 1
+[VM] 554: the current instruction: 12
+[VM] 555: the current instruction: 2
+[OUTPUT] 249 
+[VM] 556: the current instruction: 1
+[VM] 558: the current instruction: 12
+[VM] 559: the current instruction: 1
+[VM] 561: the current instruction: 13
+[VM] 562: the current instruction: 2
+[OUTPUT] 214 
+[VM] 563: the current instruction: 2
+[OUTPUT] 241 
+[VM] 564: the current instruction: 2
+[OUTPUT] 216 
+[OUTPUT] 25 
+[OUTPUT] 255 
+[OUTPUT] 17 
+[OUTPUT] 99 
+[OUTPUT] 233 
+[OUTPUT] 131 
+[OUTPUT] 123 
+[OUTPUT] 145 
+[OUTPUT] 111 
+[VM] Done.

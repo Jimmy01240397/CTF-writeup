@@ -1,0 +1,10 @@
+<%- include('header') %>
+<div id="app">
+<%- include('preview') %>
+<%- include('form') %>
+</div>
+<script>
+const unsanitized = decodeURIComponent("<%= html %>");
+document.getElementById("html").innerHTML = DOMPurify.sanitize(unsanitized);
+</script>
+<%- include('footer') %>

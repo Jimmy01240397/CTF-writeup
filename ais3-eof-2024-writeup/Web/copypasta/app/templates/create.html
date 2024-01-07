@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+    <title>複製文產生器</title>
+</head>
+<body>
+    <h1>CopyPasta</h1>
+    <pre>{{ content | replace('field.', '') }}</pre>
+    
+    <form method="POST">
+        {% for field in fields %}
+            <input type="text" name="{{ field | replace('field.', '') }}" placeholder="{{ field | replace('field.', '') }}">
+        {% endfor %}
+
+        <p><input type="submit" value="Submit"></p>
+    </form>
+</body>
+</html>

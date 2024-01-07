@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+  web:
+    build: ./
+    volumes:
+      - ./${FLAGPATH}:/flag
+    ports:
+      - "${PORT}:80"
+
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: ${SUBNET}

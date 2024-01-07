@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  bam:
+    build: ./
+    volumes:
+      - ./flag:/home/ais3/flag:ro
+    ports:
+      - "12222:22"
