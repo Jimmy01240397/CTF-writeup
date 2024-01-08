@@ -155,5 +155,6 @@ print(bytes(data))
 ```
 
 ## Flag
-![image](https://hackmd.io/_uploads/BydqqnUOT.png)
+![image](https://github.com/Jimmy01240397/CTF-writeup/assets/57281249/211f3bd9-4c93-4797-a693-09fd643b71f4)
+
 `AIS3{arE_Y0u_@_sTATEfuL_Or_ST4t3L3SS_CTF3R}`
